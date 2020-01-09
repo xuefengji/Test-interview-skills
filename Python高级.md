@@ -75,7 +75,9 @@ print(Person.z)    #报错：AttributeError: type object 'Person' has no attribu
 
 
 
-6、请实现@runtime效果为当调用student_run时会自动打印当前时间
+6、考点：装饰器
+
+请实现@runtime效果为当调用student_run时会自动打印当前时间
 
 ```
 	@runtime
@@ -84,10 +86,11 @@ print(Person.z)    #报错：AttributeError: type object 'Person' has no attribu
 		
 	student_run("张三")
 ```
-考点：注解
 
-7、
+
+7、考点：生成器
 请简述func1和func2函数的返回值，以及函数运行机制
+
 ```
 	def func1():
 		for i in range(1, 5):
@@ -97,4 +100,6 @@ print(Person.z)    #报错：AttributeError: type object 'Person' has no attribu
 		for i in range(1, 5):
 			yield i
 ```
-考点：
+return 会阻断循环
+
+yield不会阻断循环，会将结果存储在生成器对象中，每生成一个返回一个，不像list是等待所有一起返回，占用内存比较小，对于生产器对象可以使用循环获取值
