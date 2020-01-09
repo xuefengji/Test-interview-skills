@@ -1,6 +1,11 @@
 # Python高级编程和算法面试真题
 
-1、
+1、考点：
+
++ 深浅拷贝
++ 要从可变类型和不可变类型两方面回答
++ 可变对象：list dict
++ 不可变对象：元组、字符串、数字，只要创建就不能改的元素
 
 ```
 a = ('a','b','c')
@@ -16,14 +21,11 @@ if id(b) == id(c):
 
 如果将a的值改变为list或dict，只打印b和c的值相等
 
-考点：
-
-+ 深浅拷贝
-+ 可变类型和不可变类型
 
 
+2、考点：
 
-2、
++ 类变量和实例变量
 
 ```
 class Person:    
@@ -46,18 +48,18 @@ print(person.z)      #7
 print(Person.z)    #报错：AttributeError: type object 'Person' has no attribute 'z'
 ```
 
-考点：
 
-+ 类变量和实例变量
 
 
 
 3、python中一个函数function接收3个参数a、*args 、**kwargs
 
-+ *args
-+ **kwargs
++ *args：元组类型
++ **kwargs：dict类型
 
 考点：可变参数
+
+
 
 
 
