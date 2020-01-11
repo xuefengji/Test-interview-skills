@@ -52,20 +52,34 @@ print(Person.z)    #报错：AttributeError: type object 'Person' has no attribu
 
 
 
-3、python中一个函数function接收3个参数a、*args 、**kwargs
+3、考点：可变参数
+
+python中一个函数function接收3个参数a、*args 、**kwargs
 
 + *args：元组类型
 + **kwargs：dict类型
 
-考点：可变参数
 
 
 
 
 
-4、请根据列表list1=[1,2,3,4,5,6],使用一行代码生成一个新的列表list2，list2中每个元素是list1中的平方
 
-考点：推导式
+4、考点：推导式
+
+请根据列表list1=[1,2,3,4,5,6],使用一行代码生成一个新的列表list2，list2中每个元素是list1中的平方
+
++ lambda:list2 = map(lambda x:x*x,list1)
++ 推导式方式：
+	list2=[i*i for i in list1]
+	list2 = [i * i for i in list if i > 2]有条件的列表推导式
+	字典推导式：
+	key = {
+		"key1":10,
+		"key2":20,
+		"key3":30
+	}
+	key1 = {key:value for key,value in key.items() if key == "key1"}
 
 
 
