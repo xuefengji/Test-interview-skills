@@ -83,10 +83,48 @@ python中一个函数function接收3个参数a、*args 、**kwargs
 
 
 
-5、请将下面的列表进行排序list1=[20,15,88,97,76,13,27,49]
+5、考点：冒泡、快排在效率上不同
+请将下面的列表进行排序list1=[20,15,88,97,76,13,27,49]
 
-考点：冒泡、快排在效率上不同
+常见的排序算法：
++  插入算法、希尔算法、直接排序、堆排序、冒泡排序、快速排序、归并排序、基数排序
+复杂度：
++  时间复杂度：
+	+ 常数阶O(1)、对数阶O(log2n)、线性阶O(n)、线性对数阶O(nlog2n)、平方阶O(n^2)、立方阶O(n^3)
+	 随着问题的规模n的不断增大，上述的时间复杂度就不断的增大，意味着算法的执行效率越低
++ 空间复杂度
 
++ 冒泡排序：
+	+ 相邻的两个数字进行比较，大的向下沉，最后一个元素是最大的
+	+ 时间复杂度O(n^2)
+	```
+		def bubble_sort(blist):
+			count = len(list)
+			for i in range(0,count):
+				for j in range(i+1,count):
+					if blist[i] > blist[j]
+						blist[i], blist[j]=blist[j],blist[i]
+			return blist
+	```
+
++ 快速排序：
+
+  + 递归
+  + 列表中取出第一个元素，作为标准。把比第一个元素小的都放在左侧，把比第一个元素大的都放在右侧
+  + 时间复杂度：O(nlog2n)
+
+  ```
+	def quick_sort(quick_list):
+    	if quick_list == []:
+    		return []
+    	else:
+    		first = quick_list[0]
+    		less = quick_sort([l for l in quick_list[1:] if l < first])
+    		more = quick_sort([m for m in quick_list[1:] if m > first])
+    		return less + [first] + more
+  ```
+
+  
 
 
 6、考点：装饰器
