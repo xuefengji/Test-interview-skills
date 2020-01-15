@@ -17,8 +17,16 @@ MyISAM引擎：
 
 ![MyISAM](./MyISAM.png)
 
+索引工作原理：
+
+![MyISAM索引](E:\个人文档\个人文档\个人\个人学习\测试\Test-interview-skills\MyISAM索引.png)
+
 
 
 InnoDB引擎：
 
 ![InnoDB](./InnoDB.png)
+
+索引工作原理：
+
+![InnoDB索引](E:\个人文档\个人文档\个人\个人学习\测试\Test-interview-skills\InnoDB索引.png)
