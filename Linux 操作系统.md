@@ -22,3 +22,4 @@ cat  data | sort | uniq
 
 6、如何通过监控命令查看服务器的平均负载值
 
+top

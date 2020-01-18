@@ -17,11 +17,11 @@ explain + sql
 
 MyISAM引擎：
 
-![MyISAM](./MyISAM.png)
+![MyISAM](./image/MyISAM.png)
 
 索引工作原理：
 
-![MyISAM索引](./MyISAM索引.png)
+![MyISAM索引](./image/MyISAM索引.png)
 
 特点：
 
@@ -37,11 +37,11 @@ MyISAM引擎：
 
 InnoDB引擎：
 
-![InnoDB](./InnoDB.png)
+![InnoDB](./image/InnoDB.png)
 
 索引工作原理：
 
-![InnoDB索引](./InnoDB索引.png)
+![InnoDB索引](./iamge/InnoDB索引.png)
 
 特点：
 
