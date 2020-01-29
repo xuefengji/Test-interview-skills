@@ -48,7 +48,7 @@ print(person.z)      #7
 print(Person.z)    #报错：AttributeError: type object 'Person' has no attribute 'z'
 ```
 
-
+每个实例的变量都是相互独立的
 
 
 
