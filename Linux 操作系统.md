@@ -1,6 +1,6 @@
 # Linux 操作系统
 
-1、如何动态查看文件中你关心的内容，比如error信息
+1、如何动态查看文件中你关心的内容，比如 error 信息
 
 tail -f xxx.log | grep error
 
