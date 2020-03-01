@@ -187,6 +187,15 @@ python中一个函数function接收3个参数a、*args 、**kwargs
 	student_run("张三")
 ```
 
+runtime代码：
+```
+import time
+def runtime(fn):
+    def run_outer(name):
+        print(time.time())
+        fn(name)
+    return run_outer
+```
 
 7、考点：生成器
 请简述func1和func2函数的返回值，以及函数运行机制
