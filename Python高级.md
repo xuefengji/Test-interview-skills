@@ -8,7 +8,7 @@
 
   + 可变对象：list dict
 
-    + 对于可变对象：如果将a的值改变为list或dict
+    + 对于可变对象：如果将a的值改变为 list 或 dict
 
       ```
       import copy
@@ -102,10 +102,10 @@ print(Person.z)    #报错：AttributeError: type object 'Person' has no attribu
 
 3、考点：可变参数
 
-python中一个函数function接收3个参数a、*args 、**kwargs
+python 中一个函数 function 接收 3 个参数 a、*args 、**kwargs
 
 + *args：元组类型
-+ **kwargs：dict类型
++ **kwargs：dict 类型
 
 
 
@@ -115,12 +115,12 @@ python中一个函数function接收3个参数a、*args 、**kwargs
 
 4、考点：推导式
 
-请根据列表list1=[1,2,3,4,5,6],使用一行代码生成一个新的列表list2，list2中每个元素是list1中的平方
+请根据列表 list1=[1,2,3,4,5,6],使用一行代码生成一个新的列表 list2，list2 中每个元素是 list1 中的平方
 
 + lambda:list2 = map(lambda x:x*x,list1)
 + 推导式方式：
 	list2=[i*i for i in list1]
-	list2 = [i * i for i in list if i > 2]有条件的列表推导式
+	list2 = [i * i for i in list if i > 2] 有条件的列表推导式
 	字典推导式：
 	key = {
 		"key1":10,
@@ -132,19 +132,19 @@ python中一个函数function接收3个参数a、*args 、**kwargs
 
 
 5、考点：冒泡、快排在效率上不同
-请将下面的列表进行排序list1=[20,15,88,97,76,13,27,49]
+请将下面的列表进行排序 list1=[20,15,88,97,76,13,27,49]
 
 常见的排序算法：
 +  插入算法、希尔算法、直接排序、堆排序、冒泡排序、快速排序、归并排序、基数排序
 复杂度：
 +  时间复杂度：
-	+ 常数阶O(1)、对数阶O(log2n)、线性阶O(n)、线性对数阶O(nlog2n)、平方阶O(n^2)、立方阶O(n^3)
+	+ 常数阶 O(1)、对数阶 O(log2n)、线性阶 O(n)、线性对数阶 O(nlog2n)、平方阶 O(n^2)、立方阶 O(n^3)
 	 随着问题的规模n的不断增大，上述的时间复杂度就不断的增大，意味着算法的执行效率越低
 + 空间复杂度
 
 + 冒泡排序：
 	+ 相邻的两个数字进行比较，大的向下沉，最后一个元素是最大的
-	+ 时间复杂度O(n^2)
+	+ 时间复杂度 O(n^2)
 	```
 		def bubble_sort(blist):
 			count = len(list)
@@ -177,7 +177,7 @@ python中一个函数function接收3个参数a、*args 、**kwargs
 
 6、考点：装饰器
 
-请实现@runtime效果为当调用student_run时会自动打印当前时间
+请实现 @runtime 效果为当调用 student_run 时会自动打印当前时间
 
 ```
 	@runtime
@@ -187,7 +187,7 @@ python中一个函数function接收3个参数a、*args 、**kwargs
 	student_run("张三")
 ```
 
-runtime代码：
+runtime 代码：
 ```
 import time
 def runtime(fn):
@@ -198,7 +198,7 @@ def runtime(fn):
 ```
 
 7、考点：生成器
-请简述func1和func2函数的返回值，以及函数运行机制
+请简述 func1 和 func2 函数的返回值，以及函数运行机制
 
 ```
 	def func1():
@@ -211,4 +211,4 @@ def runtime(fn):
 ```
 return 会阻断循环
 
-yield不会阻断循环，会将结果存储在生成器对象中，每生成一个返回一个，不像list是等待所有一起返回，占用内存比较小，对于生产器对象可以使用循环获取值
+yield 不会阻断循环，会将结果存储在生成器对象中，每生成一个返回一个，不像 list 是等待所有一起返回，占用内存比较小，对于生产器对象可以使用循环获取值
